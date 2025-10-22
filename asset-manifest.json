@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Site_CampagneMW2026/static/css/main.d54f4d78.css",
-    "main.js": "/Site_CampagneMW2026/static/js/main.6158ea02.js",
+    "main.css": "/Site_CampagneMW2026/static/css/main.b35054f5.css",
+    "main.js": "/Site_CampagneMW2026/static/js/main.0be2769a.js",
+    "static/media/logo.png": "/Site_CampagneMW2026/static/media/logo.456b844e3663162ef196.png",
     "index.html": "/Site_CampagneMW2026/index.html",
-    "main.d54f4d78.css.map": "/Site_CampagneMW2026/static/css/main.d54f4d78.css.map",
-    "main.6158ea02.js.map": "/Site_CampagneMW2026/static/js/main.6158ea02.js.map"
+    "main.b35054f5.css.map": "/Site_CampagneMW2026/static/css/main.b35054f5.css.map",
+    "main.0be2769a.js.map": "/Site_CampagneMW2026/static/js/main.0be2769a.js.map"
   },
   "entrypoints": [
-    "static/css/main.d54f4d78.css",
-    "static/js/main.6158ea02.js"
+    "static/css/main.b35054f5.css",
+    "static/js/main.0be2769a.js"
   ]
 }
