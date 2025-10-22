@@ -7,7 +7,7 @@ export default function Home() {
         <div className="container">
           <h1>Construire ensemble une ville <em>qui avance</em></h1>
           <p className="lead">
-            Bienvenue sur <strong>Berner Ville d’Avenir</strong>.
+            Bienvenue sur <strong>Bernay Ville d’Avenir</strong>.
             Retrouvez notre vision, les événements à venir, la cohésion du territoire
             et le bilan de nos actions.
           </p>

@@ -3,8 +3,7 @@ import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
-document.title = "Berner Ville d’Avenir";
+document.title = "Bernay Ville d’Avenir";
 
 const root = createRoot(document.getElementById("root"));
 root.render(<App />);
-

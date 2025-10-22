@@ -5,14 +5,16 @@ import Events from "./pages/Events";
 import Cohesion from "./pages/Cohesion";
 import Bilan from "./pages/Bilan";
 import "./index.css";
+import logo from "./Images/logo.png";
 
 function NavBar() {
   return (
     <nav className="nav">
       <div className="container nav-inner">
         <div className="brand">
-          <span className="brand-badge" />
-          <span>Berner Ville d’Avenir</span>
+          {/* Logo officiel à la place du carré bleu */}
+          <img src={logo} alt="Bernay Ville d’Avenir - logo" className="brand-logo" />
+          <span>Bernay Ville d’Avenir</span>
         </div>
         <div className="menu">
           <NavLink to="/" end>Accueil</NavLink>
@@ -30,7 +32,7 @@ function Footer() {
   return (
     <footer className="section">
       <div className="container" style={{display:"flex",justifyContent:"space-between",alignItems:"center",gap:"1rem",flexWrap:"wrap"}}>
-        <div>© {new Date().getFullYear()} Berner Ville d’Avenir</div>
+        <div>© {new Date().getFullYear()} Bernay Ville d’Avenir</div>
         <div className="links">
           <a href="#/" title="Accueil">Accueil</a>
           <a href="#/evenements" title="Événements">Événements</a>
@@ -44,7 +46,7 @@ function Footer() {
 
 export default function App() {
   React.useEffect(() => {
-    document.title = "Berner Ville d’Avenir";
+    document.title = "Bernay Ville d’Avenir";
   }, []);
 
   return (

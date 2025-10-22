@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Site_CampagneMW2026/static/css/main.d54f4d78.css",
+    "main.js": "/Site_CampagneMW2026/static/js/main.6158ea02.js",
+    "index.html": "/Site_CampagneMW2026/index.html",
+    "main.d54f4d78.css.map": "/Site_CampagneMW2026/static/css/main.d54f4d78.css.map",
+    "main.6158ea02.js.map": "/Site_CampagneMW2026/static/js/main.6158ea02.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d54f4d78.css",
+    "static/js/main.6158ea02.js"
+  ]
+}
