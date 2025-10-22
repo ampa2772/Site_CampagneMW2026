@@ -12,7 +12,7 @@ function NavBar() {
     <nav className="nav">
       <div className="container nav-inner">
         <div className="brand">
-          {/* Logo officiel à la place du carré bleu */}
+          {/* Logo officiel à la place du carré bleu (taille gérée dans .brand-logo) */}
           <img src={logo} alt="Bernay Ville d’Avenir - logo" className="brand-logo" />
           <span>Bernay Ville d’Avenir</span>
         </div>
@@ -21,7 +21,7 @@ function NavBar() {
           <NavLink to="/evenements">Événements</NavLink>
           <NavLink to="/cohesion">Cohésion</NavLink>
           <NavLink to="/bilan">Bilan</NavLink>
-          <a className="tag" href="https://github.com/ampa2772/Site_CampagneMW2026" target="_blank" rel="noreferrer">GitHub</a>
+          {/* Lien GitHub retiré car non utile à la navigation publique */}
         </div>
       </div>
     </nav>
@@ -62,3 +62,4 @@ export default function App() {
     </HashRouter>
   );
 }
+
