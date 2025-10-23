@@ -14,6 +14,9 @@ import imgMusee from "../Images/MuséeBernay.jpg";
 import imgCasiers from "../Images/Casiers.jpg";
 import imgPAT from "../Images/PAT.jpg";
 
+// NOUVEL AJOUT: Importation de la vidéo de la piscine
+import videoPiscine from "../Images/Gen-4 the camera moves forward like a drone 1587114135.mp4";
+
 // Données structurées du contrat municipal
 const bilanData = [
   {
@@ -62,8 +65,9 @@ const bilanData = [
     title: "Centre Aquatique Intercommunal « Les Bains de Bernay »",
     text: "Centre aquatique moderne avec bassins sportifs, nordiques, espace bien-être et gradins extensibles, architecture écoresponsable, ouverture prévue en 2026. Projet phare porté par l’IBTN, Région, État et Département.",
     image: null,
+    video: videoPiscine, // MODIFIÉ: Ajout de la vidéo
     url: "https://www.shema.fr/projets/centre-aquatique-bains-de-bernay/",
-    layout: "text-only",
+    layout: "text-left", // MODIFIÉ: 'text-only' devient 'text-left' (texte à gauche, vidéo à droite)
   },
   {
     id: 7,
@@ -117,15 +121,28 @@ const bilanData = [
 
 /**
  * Composant pour afficher une image (cliquable ou non)
+ * MODIFIÉ pour gérer aussi les vidéos
  */
-function BilanMedia({ image, url, title }) {
-  if (!image) return null;
+function BilanMedia({ image, video, url, title }) {
+  // Si pas d'image ET pas de vidéo, ne rien rendre
+  if (!image && !video) return null;
 
-  const imgTag = (
+  // Détermine quel tag média utiliser
+  const mediaTag = video ? (
+    <video
+      src={video}
+      className="bilan-item-image" // Réutilise la classe CSS de l'image
+      autoPlay
+      loop
+      muted
+      playsInline // Important pour iOS
+      title={title}
+    />
+  ) : (
     <img src={image} alt={title} className="bilan-item-image" />
   );
 
-  // S'il y a une URL, l'image est cliquable
+  // S'il y a une URL, le média est cliquable
   if (url) {
     return (
       <a
@@ -135,13 +152,13 @@ function BilanMedia({ image, url, title }) {
         title={`En savoir plus sur : ${title}`}
         className="bilan-item-media"
       >
-        {imgTag}
+        {mediaTag}
       </a>
     );
   }
 
-  // Sinon, simple image non cliquable
-  return <div className="bilan-item-media">{imgTag}</div>;
+  // Sinon, simple média non cliquable
+  return <div className="bilan-item-media">{mediaTag}</div>;
 }
 
 /**
@@ -192,7 +209,7 @@ export default function Bilan() {
             );
           }
 
-          // Cas: 6 & 7. Texte seulement
+          // Cas: 7. Texte seulement
           if (item.layout === "text-only") {
             return (
               <section key={item.id} className="card bilan-item">
@@ -216,7 +233,7 @@ export default function Bilan() {
             );
           }
 
-          // Cas par défaut: Grille 2 colonnes (Texte/Image)
+          // Cas par défaut: Grille 2 colonnes (Texte/Image ou Texte/Vidéo)
           const layoutClass =
             item.layout === "text-left"
               ? "layout-text-left"
@@ -231,7 +248,8 @@ export default function Bilan() {
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
                 {item.url &&
-                  !item.image && ( // S'il y a un lien mais pas d'image (ex: PAT)
+                  !item.image &&
+                  !item.video && ( // S'il y a un lien mais pas de média
                     <div className="bilan-links">
                       <a
                         href={item.url}
@@ -246,6 +264,7 @@ export default function Bilan() {
               </div>
               <BilanMedia
                 image={item.image}
+                video={item.video} // Passe la vidéo au composant
                 url={item.url}
                 title={item.title}
               />
