@@ -1,15 +1,25 @@
 {
   "files": {
-    "main.css": "/Site_CampagneMW2026/static/css/main.c01ca3f2.css",
-    "main.js": "/Site_CampagneMW2026/static/js/main.bf3c3557.js",
+    "main.css": "/Site_CampagneMW2026/static/css/main.7512db8e.css",
+    "main.js": "/Site_CampagneMW2026/static/js/main.8bc2bc0f.js",
     "static/media/bernay.png": "/Site_CampagneMW2026/static/media/bernay.fab813f8f6daf1bb19ce.png",
+    "static/media/chaufferie.jpg": "/Site_CampagneMW2026/static/media/chaufferie.4c4cc955b181816e23fc.jpg",
+    "static/media/Casiers.jpg": "/Site_CampagneMW2026/static/media/Casiers.346f41261ce442e3251a.jpg",
+    "static/media/PAT.jpg": "/Site_CampagneMW2026/static/media/PAT.12444fcd142c83a01271.jpg",
+    "static/media/Bourg-le-Comte.jpg": "/Site_CampagneMW2026/static/media/Bourg-le-Comte.c09d802d2103bf72c7dc.jpg",
+    "static/media/PrairieCharentonne.png": "/Site_CampagneMW2026/static/media/PrairieCharentonne.a745d4df06fdc1560629.png",
+    "static/media/quartier_de_gare.png": "/Site_CampagneMW2026/static/media/quartier_de_gare.f32d264a6646b2ad8335.png",
+    "static/media/JulesFerry.png": "/Site_CampagneMW2026/static/media/JulesFerry.8762990e58bb40ba6b14.png",
+    "static/media/Maison_Enfant.jpg": "/Site_CampagneMW2026/static/media/Maison_Enfant.693ae34316042d4a5f3e.jpg",
+    "static/media/Hôtel_de_la_gabelle_Bernay.jpg": "/Site_CampagneMW2026/static/media/Hôtel_de_la_gabelle_Bernay.4824b17e144933c9d901.jpg",
     "static/media/logo.png": "/Site_CampagneMW2026/static/media/logo.456b844e3663162ef196.png",
+    "static/media/MuséeBernay.jpg": "/Site_CampagneMW2026/static/media/MuséeBernay.1f38fc1b3bd1c2526c4e.jpg",
     "index.html": "/Site_CampagneMW2026/index.html",
-    "main.c01ca3f2.css.map": "/Site_CampagneMW2026/static/css/main.c01ca3f2.css.map",
-    "main.bf3c3557.js.map": "/Site_CampagneMW2026/static/js/main.bf3c3557.js.map"
+    "main.7512db8e.css.map": "/Site_CampagneMW2026/static/css/main.7512db8e.css.map",
+    "main.8bc2bc0f.js.map": "/Site_CampagneMW2026/static/js/main.8bc2bc0f.js.map"
   },
   "entrypoints": [
-    "static/css/main.c01ca3f2.css",
-    "static/js/main.bf3c3557.js"
+    "static/css/main.7512db8e.css",
+    "static/js/main.8bc2bc0f.js"
   ]
 }
