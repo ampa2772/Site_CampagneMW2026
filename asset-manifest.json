@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/Site_CampagneMW2026/static/css/main.e501a5ac.css",
+    "main.css": "/Site_CampagneMW2026/static/css/main.c01ca3f2.css",
     "main.js": "/Site_CampagneMW2026/static/js/main.bf3c3557.js",
+    "static/media/bernay.png": "/Site_CampagneMW2026/static/media/bernay.fab813f8f6daf1bb19ce.png",
     "static/media/logo.png": "/Site_CampagneMW2026/static/media/logo.456b844e3663162ef196.png",
     "index.html": "/Site_CampagneMW2026/index.html",
-    "main.e501a5ac.css.map": "/Site_CampagneMW2026/static/css/main.e501a5ac.css.map",
+    "main.c01ca3f2.css.map": "/Site_CampagneMW2026/static/css/main.c01ca3f2.css.map",
     "main.bf3c3557.js.map": "/Site_CampagneMW2026/static/js/main.bf3c3557.js.map"
   },
   "entrypoints": [
-    "static/css/main.e501a5ac.css",
+    "static/css/main.c01ca3f2.css",
     "static/js/main.bf3c3557.js"
   ]
 }
