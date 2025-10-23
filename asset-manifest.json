@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Site_CampagneMW2026/static/css/main.7512db8e.css",
-    "main.js": "/Site_CampagneMW2026/static/js/main.bfd2732b.js",
+    "main.js": "/Site_CampagneMW2026/static/js/main.bd3cda8b.js",
     "static/media/Gen-4 the camera moves forward like a drone 1587114135.mp4": "/Site_CampagneMW2026/static/media/Gen-4 the camera moves forward like a drone 1587114135.48ffb2f036928e8f848a.mp4",
     "static/media/bernay.png": "/Site_CampagneMW2026/static/media/bernay.fab813f8f6daf1bb19ce.png",
     "static/media/chaufferie.jpg": "/Site_CampagneMW2026/static/media/chaufferie.4c4cc955b181816e23fc.jpg",
@@ -17,10 +17,10 @@
     "static/media/MuséeBernay.jpg": "/Site_CampagneMW2026/static/media/MuséeBernay.1f38fc1b3bd1c2526c4e.jpg",
     "index.html": "/Site_CampagneMW2026/index.html",
     "main.7512db8e.css.map": "/Site_CampagneMW2026/static/css/main.7512db8e.css.map",
-    "main.bfd2732b.js.map": "/Site_CampagneMW2026/static/js/main.bfd2732b.js.map"
+    "main.bd3cda8b.js.map": "/Site_CampagneMW2026/static/js/main.bd3cda8b.js.map"
   },
   "entrypoints": [
     "static/css/main.7512db8e.css",
-    "static/js/main.bfd2732b.js"
+    "static/js/main.bd3cda8b.js"
   ]
 }
