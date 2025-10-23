@@ -14,7 +14,7 @@ function NavBar() {
         <div className="brand">
           {/* Logo officiel à la place du carré bleu (taille gérée dans .brand-logo) */}
           <img src={logo} alt="Bernay Ville d’Avenir - logo" className="brand-logo" />
-          <span>Bernay Ville d’Avenir</span>
+          <span className="brand-title">BERNAY VILLE D’AVENIR</span>
         </div>
         <div className="menu">
           <NavLink to="/" end>Accueil</NavLink>
@@ -62,4 +62,3 @@ export default function App() {
     </HashRouter>
   );
 }
-
