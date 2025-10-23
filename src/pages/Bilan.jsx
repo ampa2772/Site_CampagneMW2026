@@ -62,12 +62,26 @@ const bilanData = [
   },
   {
     id: 6,
-    title: "Centre Aquatique Intercommunal « Les Bains de Bernay »",
+    // MODIFIÉ: Le titre est maintenant un élément JSX pour forcer la mise en page
+    title: (
+      <>
+        Centre Aquatique Intercommunal
+        <span
+          style={{
+            display: "block",
+            fontSize: "0.9em",
+            marginTop: "0.2rem",
+          }}
+        >
+          « Les Bains de Bernay »
+        </span>
+      </>
+    ),
     text: "Centre aquatique moderne avec bassins sportifs, nordiques, espace bien-être et gradins extensibles, architecture écoresponsable, ouverture prévue en 2026. Projet phare porté par l’IBTN, Région, État et Département.",
     image: null,
-    video: videoPiscine, // MODIFIÉ: Ajout de la vidéo
+    video: videoPiscine,
     url: "https://www.shema.fr/projets/centre-aquatique-bains-de-bernay/",
-    layout: "text-left", // MODIFIÉ: 'text-only' devient 'text-left' (texte à gauche, vidéo à droite)
+    layout: "text-left",
   },
   {
     id: 7,
@@ -136,7 +150,7 @@ function BilanMedia({ image, video, url, title }) {
       loop
       muted
       playsInline // Important pour iOS
-      title={title}
+      title={title} // Le titre ne sera pas 'title' mais on le garde pour l'accessibilité
     />
   ) : (
     <img src={image} alt={title} className="bilan-item-image" />
@@ -149,7 +163,7 @@ function BilanMedia({ image, video, url, title }) {
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        title={`En savoir plus sur : ${title}`}
+        title={"En savoir plus sur ce projet"} // Titre générique car 'title' peut être un objet JSX
         className="bilan-item-media"
       >
         {mediaTag}
